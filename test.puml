@@ -1,0 +1,52 @@
+@startuml
+
+' Настройка стиля для прямоугольника
+skinparam class {
+    BackgroundColor #FFF
+    BorderColor #000
+    ArrowColor #000
+    FontName Arial
+}
+
+' Класс с атрибутами и методами
+class "Практика" as MyClass {
+  ' Атрибуты (поля класса)
+  - attribute1: string
+  - attribute2: int
+  - attribute3: bool
+  ' Методы (функции класса)
+  + method1(param: string): void
+  + method2(): int
+  + method3(param1: int, param2: bool): string
+}
+
+' Можно добавить связь с другим классом (опционально)
+' class AnotherClass
+' MyClass --> AnotherClass : "использует"
+MyClass--BRS
+
+' Настройка стиля для прямоугольника
+skinparam class {
+    BackgroundColor #FFF
+    BorderColor #000
+    ArrowColor #000
+    FontName Arial
+}
+
+' Класс с атрибутами и методами
+class "БРС" as BRS {
+  ' Атрибуты (поля класса)
+  - attribute1: string
+  - attribute2: int
+  - attribute3: bool
+
+  ' Методы (функции класса)
+  + method1(param: string): void
+  + method2(): int
+  + method3(param1: int, param2: bool): string
+}
+' Можно добавить связь с другим классом (опционально)
+' class AnotherClass
+' MyClass --> AnotherClass : "использует"
+
+@enduml
