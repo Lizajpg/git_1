@@ -11,13 +11,19 @@ skinparam class {
 ' Класс с атрибутами и методами
 class "Практика" as MyClass {
   ' Атрибуты (поля класса)
-  - attribute1: string
-  - attribute2: int
-  - attribute3: bool
+  - attribute1: ФИО студента
+  - attribute2: Инструкция
+  - attribute3: Шаблон документов
+  - attribute4: Скан документов
+  - attribute5: Список предприятий
+  - attribute6: Список руководителей
+  - attribute7: Список тем
   ' Методы (функции класса)
-  + method1(param: string): void
-  + method2(): int
-  + method3(param1: int, param2: bool): string
+  + method1(param: string): Просмотр и скачивание инструкции
+  + method2(): Переход на страницу с информацией
+  + method3(param1: int, param2: bool): выбор предприятия, руководителя, темы
+  + method4(): Открыть шаблон документов
+  + method5(): Добавить скан документов
 }
 
 ' Можно добавить связь с другим классом (опционально)
@@ -36,13 +42,19 @@ skinparam class {
 ' Класс с атрибутами и методами
 class "БРС" as BRS {
   ' Атрибуты (поля класса)
-  - attribute1: string
-  - attribute2: int
-  - attribute3: bool
-
+  - attribute1: Название дисциплины
+  - attribute2: ФИО преподавателя
+  - attribute3: Итоги по дисциплине
+  - attribute4: Общий балл за лекции
+  - attribute5: Общий балл за практики
+  - attribute6: Текущая аттестация по лекции
+  - attribute7: Текущая аттестация по практике
+  - attribute8: Промежуточная аттестация по лекции
+  - attribute9^ Промежуточная аттестация по практике
+  - 
   ' Методы (функции класса)
-  + method1(param: string): void
-  + method2(): int
+  + (): void
+  +  (): int
   + method3(param1: int, param2: bool): string
 }
 ' Можно добавить связь с другим классом (опционально)
